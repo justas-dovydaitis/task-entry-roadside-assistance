@@ -1,27 +1,7 @@
 # TaskAgmis
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+- Importuoju GoogleMaps index.html file, ir žemėlapiams daugiau nieko kaip ir nenaudoju, nes kažkodėl nei @angular/google-maps, nei @agm/core neveikia su Angular 11.
+- Servisai singletonai root'e, tam, kad duomenų nereikėtų niekur dėti ir po to traukti. Gal ir ne pats papraščiausias sprendimas, bet ,manau, legit.
+- Tech. pagalba skrenda sraigtasparniu pas mus link mūsų, nes už Directions API pagailėjau pinigų arba tiesiog nesugebėjau padaryt, kad veiktų.
+- Kadangi, parašyta naudojam Angular 4+ ir GoogleMaps, todėl supratau, kad jokios kitos libraries nepageidaujamos.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

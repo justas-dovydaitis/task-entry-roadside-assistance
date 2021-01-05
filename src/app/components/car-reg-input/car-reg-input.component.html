@@ -1,0 +1,39 @@
+<h1>Įveskite mašinos nr.</h1>
+
+<input
+  class="registration-number__input"
+  type="text"
+  [formControl]="carRegNumber"
+  placeholder="Mašinos nr."
+  autocapitalize="characters"
+  (input)="capitalize(carRegNumber)"
+/>
+<div
+  class="registration-number__errors"
+  *ngIf="carRegNumber.invalid && (carRegNumber.dirty || carRegNumber.touched)"
+>
+  <div *ngIf="carRegNumber.errors && carRegNumber.errors.pattern">
+    <p>Neteisingas numerio formatas. Galimi formatai:</p>
+    <ul>
+      <li>XXX000</li>
+      <li>00XXX</li>
+      <li>000XX</li>
+      <li>00XX</li>
+    </ul>
+  </div>
+  <p *ngIf="carRegNumber.errors && carRegNumber.errors.required">
+    Laukas privalomas
+  </p>
+</div>
+<button
+  [disabled]="
+    (carRegNumber.invalid && (carRegNumber.dirty || carRegNumber.touched)) ||
+    (!carRegNumber.dirty && !carRegNumber.touched)
+  "
+  class="submit"
+  (click)="submit()"
+>
+  Toliau
+</button>
+
+<a href="javascript:void(0)">Reikia pagalbos?</a>

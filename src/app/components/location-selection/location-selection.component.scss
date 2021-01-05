@@ -1,0 +1,15 @@
+
+#map {
+  height: 500px;
+  width: 100%;
+ }
+ :host {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  justify-content: center;
+
+  text-align: center;
+}

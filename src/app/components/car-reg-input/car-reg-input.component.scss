@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  justify-content: center;
+
+  text-align: center;
+}
+.registration-number {
+  &__input {
+    margin: 2rem 0 0 0;
+    padding: 0.5rem;
+
+    border: 0.5px solid #dddddd;
+    border-radius: 3px;
+  }
+
+  &__errors {
+    color: #ff0000;
+  }
+
+}

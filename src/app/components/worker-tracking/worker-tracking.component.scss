@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  justify-content: center;
+
+  // text-align: center;
+}
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+.divider {
+  width: 100%;
+}
+.worker-info {
+  margin: 1rem 0;
+}
+
+.info {
+
+  text-align: center;
+  margin: 0.5rem 0;
+}
